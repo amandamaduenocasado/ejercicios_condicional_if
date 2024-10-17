@@ -2,7 +2,7 @@ function verificarEdad(name, age) {
   if (age >= 18) {
     console.log('Hola ' + name + ', eres mayor de edad.');
   } else {
-    console.log('Hola [name], eres menor de edad.');
+    console.log('Hola ' + name + ', eres menor de edad.');
   }
 }
 
@@ -34,19 +34,6 @@ searchNumber(-3);
 searchNumber(1);
 searchNumber(3);
 
-/* function searchMarks(mark) {
-  if (mark < 5) {
-    console.log(mark + ' suspenso ');
-  } else if (mark >= 5 && mark <= 8) {
-    console.log(mark + ' aprobado ');
-  } else if (mark > 8) {
-    console.log(mark + ' matricula de honor ');
-  }
-}
-
-searchMarks(4);
-searchMarks(6);
-searchMarks(9); */
 
 /* function searchMarks(markA, markB, markC) {
   if (markA + markB + markC / 3 < 5) {
@@ -88,7 +75,7 @@ function searchBiggest(numberA, numberB, numberC) {
   }
 }
 
-searchBiggest(5, 2, 1);
+searchBiggest(2, 30, 1);
 
 function checkDivision(number) {
   if (number % 3 === 0 && number % 5 === 0) {
@@ -100,16 +87,27 @@ function checkDivision(number) {
   } else {
     console.log('No es divisible por 3 ni por 5');
   }
-}
+} 
 
-checkDivision(10);
+checkDivision(350);
 
 function checkNumber(number) {
   if (number % 2 === 0) {
-    console.log(number + ' es un número par');
+    console.log(number +  ' es un número par');
   } else {
-    console.log(number + ' es un número impar');
+    console.log(number +  ' es un número impar');
   }
 }
 
-checkNumber(31);
+checkNumber(3);
+
+function leapYear(year) {
+  if (year % 4 === 0 || year % 400 === 0 && year % 100 !== 0) {
+    console.log(year + ' es un año bisiesto');
+  } else {
+    console.log(year + ' no es un año bisiesto');
+  }
+}
+
+leapYear (1997);
+
